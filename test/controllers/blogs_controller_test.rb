@@ -1,33 +1,33 @@
 require "test_helper"
 
 class BlogsControllerTest < ActionDispatch::IntegrationTest
+
+  setup do 
+    @blog = blogs(:one)
+  end
+
   test "should get index" do
-    get blogs_index_url
+    get blogs_path
     assert_response :success
   end
-
+  
   test "should get show" do
-    get blogs_show_url
+    get blog_path @blog
     assert_response :success
   end
 
-  test "should get new" do
-    get blogs_new_url
+  test "should create" do
+    post blogs_path params: { blog: { title: "test", body: "test" } }
     assert_response :success
   end
 
-  test "should get create" do
-    get blogs_create_url
+  test "should update" do
+    put blog_path(@blog), params: { blog: { title: "test", body: "test" } }
     assert_response :success
   end
 
-  test "should get update" do
-    get blogs_update_url
-    assert_response :success
-  end
-
-  test "should get delete" do
-    get blogs_delete_url
+  test "should delete" do
+    delete blog_path(@blog)
     assert_response :success
   end
 end
