@@ -17,10 +17,10 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: myapp_development
+  database: mydb
   pool: 5
-  username: brenden
-  password:
+  username: jakeshort
+  password: password
   timeout: 5000
  
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -47,8 +47,8 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: myapp_test
+  database: mydb
   pool: 5
-  username: brenden
-  password:
+  username: jakeshort
+  password: password
   timeout: 5000
