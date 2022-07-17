@@ -15,6 +15,7 @@
           1,
           null,
           1,
+          1,
           null,
           null,
           null,
@@ -36,6 +37,8 @@
           null,
           null,
           null,
+          1,
+          1,
           1,
           null,
           null
@@ -160,12 +163,18 @@
       "/Users/jakeshort/Desktop/rails_projects/blog_app/my_blog_be/config/routes.rb": {
         "lines": [
           1,
+          1,
           null,
           null,
           null,
           null,
           null,
           1,
+          null,
+          1,
+          0,
+          null,
+          null,
           1,
           null
         ]
@@ -296,6 +305,6 @@
         ]
       }
     },
-    "timestamp": 1658081685
+    "timestamp": 1658101525
   }
 }
