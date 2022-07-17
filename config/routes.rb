@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   get "home", to: "application#home"
+  resources :blogs
 end
