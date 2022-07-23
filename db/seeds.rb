@@ -6,6 +6,25 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-5.times do
-    Blog.create title: Faker::Esport.game, body: Faker::Fantasy::Tolkien.poem
+if Blog.all.count < 1
+    5.times do
+        Blog.create title: Faker::Esport.game, body: Faker::Fantasy::Tolkien.poem
+    end
 end
+
+
+[
+    {
+        first_name: 'Jake',
+        last_name: 'Short',
+        email: 'jrshort89@gmail.com',
+        password: 'password',
+    }
+].each { |u|
+    if !User.find_by email: u[:email]
+        user = User.create u
+        puts user
+    end
+}
+
+
