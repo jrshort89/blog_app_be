@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   resources :blogs
+  resources :users
 
   if Rails.env.development?
     mount GraphiQL::Rails::Engine, at: "/graphiql", graphql_path: "graphql#execute"
