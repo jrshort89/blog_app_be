@@ -1,7 +1,7 @@
 {
   "Minitest": {
     "coverage": {
-      "/Users/jakeshort/Desktop/rails_projects/blog_app/my_blog_be/config/environment.rb": {
+      "/Users/jakeshort/Documents/personal_projects/blog_app_be/config/environment.rb": {
         "lines": [
           null,
           1,
@@ -10,11 +10,12 @@
           1
         ]
       },
-      "/Users/jakeshort/Desktop/rails_projects/blog_app/my_blog_be/config/application.rb": {
+      "/Users/jakeshort/Documents/personal_projects/blog_app_be/config/application.rb": {
         "lines": [
           1,
           null,
           1,
+          1,
           null,
           null,
           null,
@@ -36,12 +37,14 @@
           null,
           null,
           null,
+          1,
+          1,
           1,
           null,
           null
         ]
       },
-      "/Users/jakeshort/Desktop/rails_projects/blog_app/my_blog_be/config/environments/test.rb": {
+      "/Users/jakeshort/Documents/personal_projects/blog_app_be/config/environments/test.rb": {
         "lines": [
           1,
           null,
@@ -96,26 +99,6 @@
           null,
           null,
           1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/jakeshort/Desktop/rails_projects/blog_app/my_blog_be/config/initializers/cors.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           null,
           null,
           null,
@@ -125,19 +108,7 @@
           null
         ]
       },
-      "/Users/jakeshort/Desktop/rails_projects/blog_app/my_blog_be/config/initializers/filter_parameter_logging.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/jakeshort/Desktop/rails_projects/blog_app/my_blog_be/config/initializers/inflections.rb": {
+      "/Users/jakeshort/Documents/personal_projects/blog_app_be/config/initializers/cors.rb": {
         "lines": [
           null,
           null,
@@ -157,20 +128,59 @@
           null
         ]
       },
-      "/Users/jakeshort/Desktop/rails_projects/blog_app/my_blog_be/config/routes.rb": {
+      "/Users/jakeshort/Documents/personal_projects/blog_app_be/config/initializers/filter_parameter_logging.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/jakeshort/Documents/personal_projects/blog_app_be/config/initializers/inflections.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/jakeshort/Documents/personal_projects/blog_app_be/config/routes.rb": {
         "lines": [
           1,
+          1,
           null,
           null,
           null,
           null,
           null,
           1,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
           1,
           null
         ]
       },
-      "/Users/jakeshort/Desktop/rails_projects/blog_app/my_blog_be/test/controllers/blogs_controller_test.rb": {
+      "/Users/jakeshort/Documents/personal_projects/blog_app_be/test/controllers/blogs_controller_test.rb": {
         "lines": [
           1,
           null,
@@ -207,8 +217,57 @@
           null
         ]
       },
-      "/Users/jakeshort/Desktop/rails_projects/blog_app/my_blog_be/test/models/blog_test.rb": {
+      "/Users/jakeshort/Documents/personal_projects/blog_app_be/test/controllers/users_controller_test.rb": {
         "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          5,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/jakeshort/Documents/personal_projects/blog_app_be/test/models/blog_test.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           1,
           null,
           1,
@@ -218,8 +277,20 @@
           null
         ]
       },
-      "/Users/jakeshort/Desktop/rails_projects/blog_app/my_blog_be/test/models/user_test.rb": {
+      "/Users/jakeshort/Documents/personal_projects/blog_app_be/test/models/user_test.rb": {
         "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           1,
           null,
           1,
@@ -229,26 +300,102 @@
           null
         ]
       },
-      "/Users/jakeshort/Desktop/rails_projects/blog_app/my_blog_be/app/models/blog.rb": {
+      "/Users/jakeshort/Documents/personal_projects/blog_app_be/app/models/blog.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/jakeshort/Documents/personal_projects/blog_app_be/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/jakeshort/Documents/personal_projects/blog_app_be/app/models/user.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/jakeshort/Documents/personal_projects/blog_app_be/app/controllers/users_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/jakeshort/Documents/personal_projects/blog_app_be/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/jakeshort/Desktop/rails_projects/blog_app/my_blog_be/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/jakeshort/Desktop/rails_projects/blog_app/my_blog_be/app/models/user.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/jakeshort/Desktop/rails_projects/blog_app/my_blog_be/app/controllers/blogs_controller.rb": {
+      "/Users/jakeshort/Documents/personal_projects/blog_app_be/app/controllers/blogs_controller.rb": {
         "lines": [
           1,
           1,
@@ -288,14 +435,8 @@
           null,
           null
         ]
-      },
-      "/Users/jakeshort/Desktop/rails_projects/blog_app/my_blog_be/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1658081685
+    "timestamp": 1658606965
   }
 }
