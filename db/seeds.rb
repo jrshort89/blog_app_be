@@ -8,7 +8,7 @@
 
 if Blog.all.count < 1
     5.times do
-        Blog.create title: Faker::Esport.game, body: Faker::Fantasy::Tolkien.poem
+        Blog.create title: Faker::Esport.game, body: Faker::Fantasy::Tolkien.poem, user_id: rand(1..User.all.count)
     end
 end
 
@@ -19,11 +19,17 @@ end
         last_name: 'Short',
         email: 'jrshort89@gmail.com',
         password: 'password',
+    },
+    {
+        first_name: 'Test',
+        last_name: 'Testerson',
+        email: 'test@test.com',
+        password: 'password',
     }
 ].each { |u|
     if !User.find_by email: u[:email]
         user = User.create u
-        puts user
+        puts "Successfully created user: #{user.email}"
     end
 }
 

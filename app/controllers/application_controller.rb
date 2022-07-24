@@ -10,7 +10,15 @@ class ApplicationController < ActionController::API
 
   def require_user
     if !logged_in?
-      redirect_to json: "You must log in."
+      unauthorized
     end
+  end
+
+  def current_user_can_modify id
+    current_user.id == id
+  end
+
+  def unauthorized
+    head :forbidden
   end
 end

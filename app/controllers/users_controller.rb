@@ -18,20 +18,20 @@ class UsersController < ApplicationController
 
   def update
     user = User.find params[:id]
-    if user.update user_params
+    if current_user_can_modify user.id && user.update user_params
       render json: user
       return
     end
-    render json: "Failed to update user!"
+    unauthorized
   end
 
   def destroy
     user = User.find(params[:id])
-    if user.destroy
+    if current_user_can_modify user.id && user.destroy
       render json: "Successfully destroyed user #{params[:id]}"
       return
     end
-    render json: "Failed to destroy user #{params[:id]}"
+    unauthorized
   end
 
   private
