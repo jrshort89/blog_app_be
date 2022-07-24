@@ -163,18 +163,14 @@
       "/Users/jakeshort/Documents/personal_projects/blog_app_be/config/routes.rb": {
         "lines": [
           1,
-          1,
           null,
           null,
           null,
           null,
           null,
           1,
-          null,
           1,
-          0,
-          null,
-          null,
+          1,
           1,
           null,
           1,
@@ -182,6 +178,23 @@
           null,
           null,
           1,
+          null
+        ]
+      },
+      "/Users/jakeshort/Documents/personal_projects/blog_app_be/test/controllers/applicaiton_controller_test.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
           null
         ]
       },
@@ -218,6 +231,23 @@
           1,
           1,
           1,
+          null,
+          null
+        ]
+      },
+      "/Users/jakeshort/Documents/personal_projects/blog_app_be/test/controllers/sessions_controller_test.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null
         ]
@@ -319,6 +349,9 @@
           null,
           null,
           1,
+          1,
+          null,
+          1,
           null
         ]
       },
@@ -345,6 +378,78 @@
           null,
           1,
           1,
+          3,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/jakeshort/Documents/personal_projects/blog_app_be/app/controllers/blogs_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          0,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/jakeshort/Documents/personal_projects/blog_app_be/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          5,
+          null,
+          null,
+          1,
+          5,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
           null
         ]
       },
@@ -393,55 +498,8 @@
           null,
           null
         ]
-      },
-      "/Users/jakeshort/Documents/personal_projects/blog_app_be/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/jakeshort/Documents/personal_projects/blog_app_be/app/controllers/blogs_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          0,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          2,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1658606965
+    "timestamp": 1658689525
   }
 }
