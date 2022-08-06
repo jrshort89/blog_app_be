@@ -6,3 +6,9 @@ FactoryBot.define do
     password { "password" }
   end
 end
+
+def user_with_blogs(blogs_count: 5)
+  FactoryBot.create(:user) do |user|
+    FactoryBot.create_list(:blog, blogs_count, user: user)
+  end
+end
