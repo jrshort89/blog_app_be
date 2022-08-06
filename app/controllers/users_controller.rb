@@ -19,10 +19,10 @@ class UsersController < ApplicationController
   def update
     user = User.find params[:id]
 
-    if (current_user_can_modify user.id && user.update user_params)
-      render json: user
-      return
-    end
+    # if (current_user_can_modify user.id && user.update user_params)
+    #   render json: user
+    #   return
+    # end
     unauthorized
   end
 
