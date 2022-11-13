@@ -1,5 +1,6 @@
-class BlogsController < ApplicationController
+# frozen_string_literal: true
 
+class BlogsController < ApplicationController
   before_action :require_user
 
   def index
@@ -17,13 +18,13 @@ class BlogsController < ApplicationController
       render json: blog
       return
     end
-    render json: "Failed to create blog!"
+    render json: 'Failed to create blog!'
   end
 
   def update
     blog = Blog.find params[:id]
     if current_user_can_modify blog.user_id
-      blog.update blog_params 
+      blog.update blog_params
       render json: blog
       return
     end

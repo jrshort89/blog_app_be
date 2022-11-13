@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe Blog, type: :model do
   it 'creates with valid fields' do
     blog = build(:blog)
-    expect(blog.title).to eq("A Blog Title")
-    expect(blog.body).to eq("A blog body.")
+    expect(blog.title).to eq('A Blog Title')
+    expect(blog.body).to eq('A blog body.')
     expect(blog.save).to be(true)
   end
 
