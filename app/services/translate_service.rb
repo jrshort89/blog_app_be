@@ -14,6 +14,10 @@ class TranslateService < ApplicationService
     body = [{ text: @text_to_translate }].to_json
     base_uri = ENV['MS_TRANSLATOR_BASE_URI']
     response = HTTParty.post(base_uri, body: body, headers: HEADERS)
-    JSON.parse(response.body)[0]['translations'][0]['text']
+    translation = JSON.parse(response.body)[0]['translations'][0]['text']
+    # todo: don't hardcode user
+    current_user = User.find 1
+    spanish_translation = current_user.spanish_translations.create! english_text: @text_to_translate, spanish_text: translation
+    spanish_translation
   end
 end
