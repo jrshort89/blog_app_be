@@ -21,4 +21,6 @@ class User < ApplicationRecord
                     format: { with: VALID_EMAIL_REGEX }
 
   has_many :blogs
+  has_many :user_spanish_translations
+  has_many :spanish_translations, through: :user_spanish_translations
 end
