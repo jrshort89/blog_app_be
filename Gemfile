@@ -43,6 +43,7 @@ gem 'graphql'
 
 gem 'faker'
 
+gem 'httparty'
 gem 'rubocop'
 
 group :development, :test do
