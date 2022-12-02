@@ -10,13 +10,11 @@ class TranslateService < ApplicationService
     @text_to_translate = text_to_translate
   end
 
-  #refactor because this is too big
   def call
     translation = translate_text
     # todo: don't hardcode user
     current_user = User.find 1
-    spanish_translation = current_user.spanish_translations.create! english_text: @text_to_translate, spanish_text: translation
-    spanish_translation
+    current_user.spanish_translations.create! english_text: @text_to_translate, spanish_text: translation
   end
 
   private
