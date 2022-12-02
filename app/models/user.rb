@@ -23,4 +23,5 @@ class User < ApplicationRecord
   has_many :blogs
   has_many :user_spanish_translations
   has_many :spanish_translations, through: :user_spanish_translations
+  has_many :translation_history
 end

@@ -13,13 +13,13 @@ class UsersController < ApplicationController
       render json: user
       return
     end
-    render json: "Failed to create user!"
+    render json: 'Failed to create user!'
   end
 
   def update
     user = User.find params[:id]
 
-    if (current_user_can_modify user.id && user.update user_params)
+    if current_user_can_modify user.id && user.update(user_params)
       render json: user
       return
     end

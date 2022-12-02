@@ -6,7 +6,7 @@ module Mutations
     argument :title, String
     argument :body, String
 
-    field :blog, Types::Blog
+    field :blog, Types::BlogType
 
     def resolve(title: nil, body: nil)
       Blog.create!
