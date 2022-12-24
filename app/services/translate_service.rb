@@ -12,10 +12,12 @@ class TranslateService < ApplicationService
 
   def call
     translation = translate_text
-    # todo: don't hardcode user
+    # TODO: don't hardcode user
     current_user = User.find 1
-    translation = current_user.spanish_translations.create! english_text: @text_to_translate, spanish_text: translation
-    current_user.translation_history.create! spanish_translation_id: translation.id
+
+    translation = SpanishTranslation.create! english_text: @text_to_translate, spanish_text: translation, user_id: current_user.id
+    TranslationHistory.create! spanish_translation_id: translation.id, user_id: current_user.id
+
     translation
   end
 

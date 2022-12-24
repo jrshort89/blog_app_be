@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_02_034647) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_11_183047) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -35,6 +35,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_02_034647) do
     t.integer "spanish_translation_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "lookup_count", default: 1, null: false
   end
 
   create_table "user_spanish_translations", force: :cascade do |t|

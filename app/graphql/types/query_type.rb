@@ -9,7 +9,7 @@ module Types
     # Add root-level fields here.
     # They will be entry points for queries on your schema.
 
-    # TODO: remove me
     field :all_blogs, resolver: Queries::AllBlogs
+    field :translation_history, resolver: Queries::TranslationHistory
   end
 end
