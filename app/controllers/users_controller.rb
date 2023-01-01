@@ -13,7 +13,7 @@ class UsersController < ApplicationController
       render json: user
       return
     end
-    render json: 'Failed to create user!'
+    render json: 'Failed to create users!'
   end
 
   def update
@@ -29,7 +29,7 @@ class UsersController < ApplicationController
   def destroy
     user = User.find(params[:id])
     if current_user_can_modify user.id && user.destroy
-      render json: "Successfully destroyed user #{params[:id]}"
+      render json: "Successfully destroyed users #{params[:id]}"
       return
     end
     unauthorized

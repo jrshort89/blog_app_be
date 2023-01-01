@@ -30,6 +30,6 @@ end
 ].each do |u|
   unless User.find_by email: u[:email]
     user = User.create u
-    puts "Successfully created user: #{user.email}"
+    puts "Successfully created users: #{user.email}"
   end
 end
