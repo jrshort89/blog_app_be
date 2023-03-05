@@ -15,7 +15,7 @@ class TranslateService < ApplicationService
     # TODO: don't hardcode users
     current_user = User.find 1
 
-    translation = SpanishTranslation.create! english_text: @text_to_translate, spanish_text: translation, user_id: current_user.id
+    translation = SpanishTranslation.create! english_text: @text_to_translate, spanish_text: translation
     TranslationHistory.create! spanish_translation_id: translation.id, user_id: current_user.id
 
     translation

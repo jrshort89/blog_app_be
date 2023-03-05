@@ -1,0 +1,2 @@
+class SpanishTranslationGroup < ApplicationRecord
+end
