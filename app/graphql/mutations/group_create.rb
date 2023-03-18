@@ -6,7 +6,7 @@ module Mutations
 
     field :group, Types::GroupType, null: false
 
-    argument :group_input, Types::GroupInputType, required: true
+    argument :group_input, Types::Input::GroupInputType, required: true
 
     def resolve(group_input:)
       group = ::Group.new(**group_input)
