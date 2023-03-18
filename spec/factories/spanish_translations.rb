@@ -1,7 +1,6 @@
 FactoryBot.define do
   factory :spanish_translation do
-    user_id { 1 }
-    spanish_text { "MyString" }
-    english_text { "MyString" }
+    spanish_text { "spanish word" }
+    english_text { "english word" }
   end
 end
