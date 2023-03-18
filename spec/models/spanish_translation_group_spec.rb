@@ -13,4 +13,11 @@ RSpec.describe SpanishTranslationGroup, type: :model do
 
     expect(spanish_translation_group.save).to be(true)
   end
+
+  it 'validates spanish_translation uniqueness for group_id' do
+    create :spanish_translation_group, group: @group, spanish_translation: @spanish_translation
+    dup_spanish_translation_group = build :spanish_translation_group, group: @group, spanish_translation: @spanish_translation
+
+    expect(dup_spanish_translation_group.save).to eq(false)
+  end
 end

@@ -11,4 +11,10 @@ RSpec.describe Group, type: :model do
     group = build(:group, name: '')
     expect(group.save).to be(false)
   end
+
+  it 'validates unique name' do
+    create(:group)
+    dup_group = build(:group)
+    expect(dup_group.save).to be(false)
+  end
 end
