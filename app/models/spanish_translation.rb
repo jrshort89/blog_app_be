@@ -1,4 +1,6 @@
 class SpanishTranslation < ApplicationRecord
+  has_many :spanish_translation_groups
+  has_many :groups, through: :spanish_translation_groups
   has_many :users, through: :user_spanish_translations
   has_many :translation_histories
 
