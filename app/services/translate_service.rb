@@ -16,7 +16,7 @@ class TranslateService < ApplicationService
     current_user = User.find 1
 
     translation = SpanishTranslation.create! english_text: @text_to_translate, spanish_text: translation, user_id: current_user.id
-    TranslationHistory.create! spanish_translation_id: translation.id, user_id: current_user.id
+    TranslationHistory.create! spanish_translation_id: translation.id
 
     translation
   end

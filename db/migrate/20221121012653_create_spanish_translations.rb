@@ -1,7 +1,6 @@
 class CreateSpanishTranslations < ActiveRecord::Migration[7.0]
   def change
     create_table :spanish_translations do |t|
-      t.integer :user_id
       t.string :spanish_text
       t.string :english_text
 
