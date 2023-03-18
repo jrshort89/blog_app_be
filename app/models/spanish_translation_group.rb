@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class SpanishTranslationGroup < ApplicationRecord
   belongs_to :group
   belongs_to :spanish_translation

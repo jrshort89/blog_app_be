@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class SpanishTranslation < ApplicationRecord
   has_many :spanish_translation_groups
   has_many :groups, through: :spanish_translation_groups

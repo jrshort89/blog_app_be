@@ -2,7 +2,7 @@
 
 module Mutations
   class GroupCreate < BaseMutation
-    description "Creates a new group"
+    description 'Creates a new group'
 
     field :group, Types::GroupType, null: false
 
@@ -10,9 +10,9 @@ module Mutations
 
     def resolve(group_input:)
       group = ::Group.new(**group_input)
-      raise GraphQL::ExecutionError.new "Error creating group", extensions: group.errors.to_hash unless group.save
+      raise GraphQL::ExecutionError.new 'Error creating group', extensions: group.errors.to_hash unless group.save
 
-      { group: group }
+      { group: }
     end
   end
 end

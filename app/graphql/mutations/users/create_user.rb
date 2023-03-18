@@ -8,9 +8,9 @@ module Mutations
       field :user, Types::UserType, null: false
 
       def resolve(email: nil)
-        user = User.find_or_create_by(email: email)
+        user = User.find_or_create_by(email:)
 
-        { user: user }
+        { user: }
       end
     end
   end

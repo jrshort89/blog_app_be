@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe SpanishTranslationGroup, type: :model do
@@ -9,14 +11,16 @@ RSpec.describe SpanishTranslationGroup, type: :model do
   end
 
   it 'creates' do
-    spanish_translation_group = build :spanish_translation_group, group: @group, spanish_translation: @spanish_translation
+    spanish_translation_group = build :spanish_translation_group, group: @group,
+                                                                  spanish_translation: @spanish_translation
 
     expect(spanish_translation_group.save).to be(true)
   end
 
   it 'validates spanish_translation uniqueness for group_id' do
     create :spanish_translation_group, group: @group, spanish_translation: @spanish_translation
-    dup_spanish_translation_group = build :spanish_translation_group, group: @group, spanish_translation: @spanish_translation
+    dup_spanish_translation_group = build :spanish_translation_group, group: @group,
+                                                                      spanish_translation: @spanish_translation
 
     expect(dup_spanish_translation_group.save).to eq(false)
   end

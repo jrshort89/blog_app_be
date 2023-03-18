@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe Group, type: :model do
   it 'creates' do
     group = build(:group)
-    expect(group.name).to eq("Generic group title")
+    expect(group.name).to eq('Generic group title')
     expect(group.save).to eq(true)
   end
 
