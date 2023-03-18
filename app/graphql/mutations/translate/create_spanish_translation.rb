@@ -8,12 +8,12 @@ module Mutations
       field :spanish_translation, Types::SpanishTranslationType
 
       def resolve(english_text: nil)
-        existing_translation = SpanishTranslation.find_by(english_text: english_text)
+        existing_translation = SpanishTranslation.find_by(english_text:)
 
         unless existing_translation.nil?
           # TODO: don't hardcode users
           translation_history = TranslationHistory.find_by(spanish_translation_id: existing_translation.id,
-                                     user_id: 1)
+                                                           user_id: 1)
           translation_history.update!(updated_at: Time.now)
           translation_history.increment!(:lookup_count)
 

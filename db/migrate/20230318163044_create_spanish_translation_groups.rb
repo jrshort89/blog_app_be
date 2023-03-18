@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateSpanishTranslationGroups < ActiveRecord::Migration[7.0]
   def change
     create_table :spanish_translation_groups do |t|
