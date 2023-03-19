@@ -1,0 +1,12 @@
+---
+:checks_add: [ ]
+:checks_remove:
+  - :whitespace
+  - :pry
+  - :ruby_symbol_hashrockets
+  - :merge_conflict
+  - :rubocop
+  - :json
+  - :yaml
+:warnings_remove: [ ]
+:warnings_add:
