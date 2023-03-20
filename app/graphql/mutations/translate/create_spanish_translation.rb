@@ -8,8 +8,7 @@ module Mutations
       field :spanish_translation, Types::SpanishTranslationType
 
       def resolve(english_text: nil)
-        existing_translation = SpanishTranslation.find_by(english_text:)
-
+        existing_translation = SpanishTranslation.find_by(english_text: english_text)
         unless existing_translation.nil?
           # TODO: don't hardcode users
           translation_history = TranslationHistory.find_by(spanish_translation_id: existing_translation.id,
