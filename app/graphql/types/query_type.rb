@@ -11,5 +11,10 @@ module Types
 
     field :all_blogs, resolver: Queries::AllBlogs
     field :translation_history, resolver: Queries::TranslationHistory
+    field :all_groups, [Types::GroupType]
+
+    def all_groups
+      Group.all
+    end
   end
 end
